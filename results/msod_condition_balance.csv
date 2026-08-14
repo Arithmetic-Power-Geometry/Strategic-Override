@@ -1,0 +1,9 @@
+condition_id,representation_condition,human_only_information_condition,ai_correctness_condition,stimuli
+C1,low_qc_candidate,absent,correct,10
+C2,low_qc_candidate,absent,incorrect,10
+C3,low_qc_candidate,present,correct,10
+C4,low_qc_candidate,present,incorrect,10
+C5,high_qc_candidate,absent,correct,10
+C6,high_qc_candidate,absent,incorrect,10
+C7,high_qc_candidate,present,correct,10
+C8,high_qc_candidate,present,incorrect,10

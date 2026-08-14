@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use MSOD, please cite this dataset."
+title: "Managerial Strategic Override Dataset (MSOD) v1.0: Experimental Benchmark and Data-Collection Instrument"
+type: dataset
+authors:
+  - family-names: "Akhtar"
+    given-names: "Mohammad Amir Khusru"
+    email: "akakhtar.2024@gmail.com"
+    affiliation: "Usha Martin University, Ranchi–834001, Jharkhand, India"
+version: "1.0"
+date-released: "2026-08-14"
+doi: "10.5281/zenodo.21930342"
+url: "https://doi.org/10.5281/zenodo.21930342"
+license: "CC-BY-4.0"

@@ -1,0 +1,33 @@
+{
+  "title": "Managerial Strategic Override Dataset (MSOD) v1.0: Experimental Benchmark and Data-Collection Instrument",
+  "creators": [
+    {
+      "name": "Mohammad Amir Khusru Akhtar",
+      "affiliation": "Usha Martin University, Ranchi–834001, Jharkhand, India"
+    }
+  ],
+  "version": "1.0",
+  "publication_date": "2026-08-14",
+  "resource_type": "dataset",
+  "doi": "10.5281/zenodo.21930342",
+  "url": "https://doi.org/10.5281/zenodo.21930342",
+  "license_data": "CC-BY-4.0",
+  "license_code": "Apache-2.0",
+  "language": "eng",
+  "keywords": [
+    "human-AI decision making",
+    "strategic management",
+    "AI override",
+    "managerial judgment",
+    "decision support",
+    "human information advantage",
+    "Discovery Plane Theory",
+    "organized answerability",
+    "experimental benchmark",
+    "artificial intelligence"
+  ],
+  "contains_human_participant_responses": false,
+  "cases": 10,
+  "factorial_conditions": 8,
+  "stimuli": 80
+}

@@ -1,0 +1,8 @@
+metric,value,source
+base_records,1000000.0,FiFAR/alert_data/Base.csv
+base_fraud_rate,0.011029,FiFAR/alert_data/Base.csv
+base_month_levels,8.0,FiFAR/alert_data/Base.csv
+synthetic_experts,50.0,FiFAR/synthetic_experts/expert_ids.yaml
+test_team_configurations,25.0,FiFAR/testbed/test/*
+test_instances_per_configuration,4457.0,FiFAR/testbed/test/*/batches.csv
+active_experts_per_test_configuration,10.0,FiFAR/testbed/test/*/capacity.csv

@@ -1,0 +1,19 @@
+{
+  "real_human_trials": 5810,
+  "real_human_participants": 381,
+  "loan_osi": -0.09476318869120959,
+  "chess_osi": 0.29169248820472143,
+  "loan_non_rescue_override": 0.0,
+  "chess_non_rescue_override": 0.17333333333333334,
+  "five_state_partition_verified": true,
+  "msod": {
+    "cases": 10,
+    "conditions": 8,
+    "stimuli": 80,
+    "domains": 10,
+    "ai_assignment_mismatches": 0,
+    "contains_human_responses": false
+  },
+  "fifar_base_records": 1000000,
+  "fifar_synthetic_experts": 50
+}

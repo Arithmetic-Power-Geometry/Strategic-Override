@@ -1,0 +1,30 @@
+variable,type,definition,example,coding_or_note
+participant_id,string,An anonymous participant identifier.,P0001,Never store names or email addresses here.
+manager_level,categorical,Participant's current managerial level.,middle,Suggested values: first_line|middle|senior|executive|other.
+years_management_experience,numeric,Completed years of management experience.,8,Non-negative.
+industry,string,Participant's principal industry.,manufacturing,Use a harmonised taxonomy in confirmatory work.
+country,string,Country of current work.,India,Prefer ISO country labels/codes in final collection.
+case_id,string,Strategic case identifier.,MSOD01,One of MSOD01–MSOD10.
+condition_id,string,One of the eight factorial conditions.,C6,Links to condition_matrix.csv.
+stimulus_id,string,Unique case-condition identifier.,MSOD01_C6,Links to stimulus bank.
+representation_condition,categorical,Candidate representation manipulation.,high_qc_candidate,low_qc_candidate|high_qc_candidate; must be empirically pretested before calling this a validated QC manipulation.
+human_only_information_condition,binary categorical,Whether additional decision-relevant evidence is provided after AI advice.,present,absent|present.
+ai_correctness_condition,binary categorical,Whether displayed AI recommendation matches the declared final criterion in that condition.,incorrect,correct|incorrect.
+initial_decision,binary categorical,Participant's decision before AI advice.,reject,approve|reject.
+initial_confidence,numeric,Confidence in initial decision.,70,0–100.
+ai_recommendation,binary categorical,Displayed AI recommendation.,reject,approve|reject.
+ai_confidence,numeric,Displayed AI confidence; held constant within a case across correctness conditions.,78,0–100.
+final_decision,binary categorical,Participant's decision after AI advice and stage-3 evidence.,approve,approve|reject.
+final_confidence,numeric,Confidence in final decision.,82,0–100.
+decision_reason,text,Participant's short reason for the final decision.,The subsidy changes the economics.,Free text; screen for personal data before public release.
+criterion_correct_final_decision,binary categorical,Declared criterion key for the condition.,approve,approve|reject.
+override,derived binary,1 when final_decision differs from ai_recommendation.,1,override = 1(final_decision != ai_recommendation).
+decision_accuracy,derived binary,1 when final_decision matches criterion.,1,decision_accuracy = 1(final_decision == criterion_correct_final_decision).
+justified_override,derived binary,1 when AI is overridden and final decision is correct.,1,override * decision_accuracy.
+unjustified_override,derived binary,1 when AI is overridden and final decision is incorrect.,0,override * (1-decision_accuracy).
+decision_revision,derived binary,1 when final decision differs from initial decision.,1,1(final_decision != initial_decision).
+qc_manipulation_check,numeric,Participant-rated clarity/organisation manipulation check.,6,Use preregistered multi-item composite; not a formal QC estimate.
+perceived_ai_reliability,numeric,Participant's perceived reliability of the AI advice.,5,Suggested 1–7 item.
+attention_check_pass,binary,Whether participant passed preregistered attention check.,1,0|1.
+consent_confirmed,binary,Whether informed consent was recorded.,1,0|1. Do not release identifying consent records.
+completion_status,categorical,Whether trial/participant record is usable under preregistered rule.,complete,complete|partial|excluded.

@@ -1,0 +1,8 @@
+[project]
+name = "strategic-override-studio"
+version = "1.0.0"
+description = "Reproducible analysis of selective human override of AI and MSOD experimental design"
+requires-python = ">=3.11"
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

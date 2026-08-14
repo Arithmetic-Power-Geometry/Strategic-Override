@@ -1,0 +1,6 @@
+pandas>=2.2,<3
+numpy>=2.0,<3
+statsmodels>=0.14,<1
+matplotlib>=3.9,<4
+gradio>=5,<7
+pytest>=8,<10

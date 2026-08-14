@@ -1,0 +1,11 @@
+construct,formula,level,interpretation
+override,1(final_decision != ai_recommendation),Trial,Observed disagreement with AI; not inherently good or bad.
+decision_accuracy,1(final_decision == criterion_correct_final_decision),Trial,Criterion-referenced final decision quality.
+justified_override,override * decision_accuracy,Trial,AI is overridden and participant ends correct.
+unjustified_override,override * (1-decision_accuracy),Trial,AI is overridden and participant ends incorrect.
+decision_revision,1(final_decision != initial_decision),Trial,Whether advice/evidence changed the expressed choice.
+override_rate_when_ai_wrong,mean(override | ai_correctness_condition='incorrect'),Participant/group,Sensitivity to opportunities to correct AI.
+override_rate_when_ai_correct,mean(override | ai_correctness_condition='correct'),Participant/group,Tendency to override correct AI.
+OSI,override_rate_when_ai_wrong - override_rate_when_ai_correct,Participant/group,"Override Selectivity Index; range [-1,1]. Higher means more selective override."
+Decision Answerability contrast,P(final=approve | evidence present) - P(final=approve | evidence absent),Case/group,Experimental evidence-removal contrast; estimate with randomized design and uncertainty.
+SOG,Not fixed in v1.0,Derived theory extension,Do not compute a universal SOG until the justificatory-evidence function is preregistered and validated.
